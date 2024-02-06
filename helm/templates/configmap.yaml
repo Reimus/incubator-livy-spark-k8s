@@ -18,6 +18,7 @@ data:
     livy.repl.jars = local:///opt/livy/repl_2.12-jars/commons-codec-1.9.jar,local:///opt/livy/repl_2.12-jars/livy-core_2.12-0.8.0-incubating-SNAPSHOT.jar,local:///opt/livy/repl_2.12-jars/livy-repl_2.12-0.8.0-incubating-SNAPSHOT.jar
     livy.server.kubernetes.allowedNamespaces = {{ .Release.Namespace }}
     livy.server.kubernetes.defaultNamespace = {{ .Release.Namespace }}
+    livy.file.local-dir-whitelist = /opt/
     {{ if eq .Values.sessionrecovery.kind "pvc" }}
     livy.server.recovery.mode = recovery
     livy.server.recovery.state-store = filesystem

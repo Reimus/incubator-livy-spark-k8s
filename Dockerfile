@@ -85,8 +85,8 @@ WORKDIR /opt/
 COPY --from=builder /tmp/livy33-k8s.tar.gz /opt/
 RUN tar -xzf /opt/livy33-k8s.tar.gz; rm /opt/livy33-k8s.tar.gz
 
-RUN wget https://archive.apache.org/dist/spark/spark-3.3.0/spark-3.3.0-bin-hadoop3.tgz
-RUN tar -xzf /opt/spark-3.3.0-bin-hadoop3.tgz;ln -s /opt/spark-3.3.0-bin-hadoop3 /opt/spark; rm /opt/spark-3.3.0-bin-hadoop3.tgz
+RUN wget https://archive.apache.org/dist/spark/spark-3.3.4/spark-3.3.4-bin-hadoop3.tgz
+RUN tar -xzf /opt/spark-3.3.4-bin-hadoop3.tgz;ln -s /opt/spark-3.3.4-bin-hadoop3 /opt/spark; rm /opt/spark-3.3.4-bin-hadoop3.tgz
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod a+x /entrypoint.sh  && \

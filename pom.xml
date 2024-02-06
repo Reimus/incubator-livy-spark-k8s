@@ -83,7 +83,7 @@
     <hadoop.version>2.7.3</hadoop.version>
     <hadoop.scope>compile</hadoop.scope>
     <spark.scala-2.11.version>2.4.5</spark.scala-2.11.version>
-    <spark.scala-2.12.version>3.3.0</spark.scala-2.12.version>
+    <spark.scala-2.12.version>3.3.4</spark.scala-2.12.version>
     <spark.version>${spark.scala-2.11.version}</spark.version>
     <hive.version>3.1.1</hive.version>
     <commons-codec.version>1.9</commons-codec.version>
@@ -117,9 +117,9 @@
     <execution.root>${user.dir}</execution.root>
     <spark.home>${execution.root}/dev/spark</spark.home>
     <spark.bin.download.url>
-      https://archive.apache.org/dist/spark/spark-3.3.0/spark-3.3.0-bin-hadoop3.tgz
+      https://archive.apache.org/dist/spark/spark-3.3.4/spark-3.3.4-bin-hadoop3.tgz
     </spark.bin.download.url>
-    <spark.bin.name>spark-3.3.0-bin-hadoop3</spark.bin.name>
+    <spark.bin.name>spark-3.3.4-bin-hadoop3</spark.bin.name>
     <kubernetes.client.version>4.9.2</kubernetes.client.version>
     <jackson.version>2.10.3</jackson.version>
     <!--  used for testing, NCSARequestLog use it for access log  -->
@@ -1095,7 +1095,7 @@
         </property>
       </activation>
       <properties>
-        <spark.scala-2.12.version>3.3.0</spark.scala-2.12.version>
+        <spark.scala-2.12.version>3.3.4</spark.scala-2.12.version>
         <spark.scala-2.11.version>2.4.5</spark.scala-2.11.version>
         <spark.version>${spark.scala-2.11.version}</spark.version>
         <netty.spark-2.12.version>4.1.63.Final</netty.spark-2.12.version>
@@ -1107,9 +1107,9 @@
         <json4s.spark-2.12.version>3.6.6</json4s.spark-2.12.version>
         <json4s.version>${json4s.spark-2.11.version}</json4s.version>
         <spark.bin.download.url>
-          https://archive.apache.org/dist/spark/spark-3.3.0/spark-3.3.0-bin-hadoop3.tgz
+          https://archive.apache.org/dist/spark/spark-3.3.4/spark-3.3.4-bin-hadoop3.tgz
         </spark.bin.download.url>
-        <spark.bin.name>spark-3.3.0-bin-hadoop3</spark.bin.name>
+        <spark.bin.name>spark-3.3.4-bin-hadoop3</spark.bin.name>
       </properties>
     </profile>
 

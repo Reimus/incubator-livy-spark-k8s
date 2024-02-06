@@ -2,9 +2,9 @@ nameOverride: "livy"
 fullnameOverride: "livy"
 
 image:
-  repository: armadik/livy
+  repository: lreimus/livy
   pullPolicy: Always
-  tag: "dev"
+  tag: "3.3.4-0.8-1"
 
 
 
@@ -35,7 +35,7 @@ rbac:
 podAnnotations: {}
 
 service:
-  type: NodePort
+  type: LoadBalancer
   port: 8998
 
 resources:
@@ -71,7 +71,7 @@ security:
 
 env:
   - name: SPARK_CONF_spark_kubernetes_container_image
-    value: armadik/livy-spark:dev
+    value: lreimus/livy-spark:3.3.4-1
   - name: SPARK_CONF_spark_kubernetes_container_image_pullPolicy
     value: Always
   - name: SPARK_CONF_spark_kubernetes_container_image_pullSecrets

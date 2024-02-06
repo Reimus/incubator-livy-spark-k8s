@@ -1,4 +1,4 @@
-# Apache Livy for k8s spark 3.3.0
+# Apache Livy for k8s spark 3.3.4
 
 I used a fork of the project https://github.com/apache/incubator-livy (include PR: https://github.com/apache/incubator-livy/pull/249/files)
 
